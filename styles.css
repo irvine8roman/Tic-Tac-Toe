@@ -1,0 +1,42 @@
+.styling {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: black 1px solid; */
+}
+
+.styling-one {
+  border-right: black 2px solid;
+  border-bottom: black 2px solid;
+}
+
+.styling-two {
+  border-right: black 2px solid;
+  border-bottom: black 2px solid;
+}
+
+.styling-three {
+  border-bottom: black 2px solid;
+}
+
+.styling-four {
+  border-right: black 2px solid;
+  border-bottom: black 2px solid;
+}
+
+.styling-five {
+  border-right: black 2px solid;
+  border-bottom: black 2px solid;
+}
+
+.styling-six {
+  border-bottom: black 2px solid;
+}
+
+.styling-seven {
+  border-right: black 2px solid;
+}
+
+.styling-eight {
+  border-right: black 2px solid;
+}
