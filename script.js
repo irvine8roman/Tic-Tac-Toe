@@ -102,6 +102,19 @@ function checkWinner() {
       "#player-turn"
     ).innerHTML = `${currentPlayer} is the winner!`;
     return true;
+  } else if (
+    document.querySelector("#letter-one").innerHTML !== "" &&
+    document.querySelector("#letter-two").innerHTML !== "" &&
+    document.querySelector("#letter-three").innerHTML !== "" &&
+    document.querySelector("#letter-four").innerHTML !== "" &&
+    document.querySelector("#letter-five").innerHTML !== "" &&
+    document.querySelector("#letter-six").innerHTML !== "" &&
+    document.querySelector("#letter-seven").innerHTML !== "" &&
+    document.querySelector("#letter-eight").innerHTML !== "" &&
+    document.querySelector("#letter-nine").innerHTML !== ""
+  ) {
+    document.querySelector("#player-turn").innerHTML = "It's a tie!";
+    return true;
   }
 }
 
