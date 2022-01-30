@@ -21,6 +21,8 @@ let currentPlayer = "X";
 //   }
 // });
 
+//Game logic. Listens to clicks in the divs and responds accordingly.
+
 document.addEventListener("click", function (e) {
   if (e.target.classList.contains("letter")) {
     if (currentPlayer === "X" && e.target.children[0].innerHTML == "") {
@@ -46,6 +48,8 @@ document.addEventListener("click", function (e) {
     }
   }
 });
+
+//Function to check for a winner adn if there is a tie. Every possible combination listed. Need to refractor.
 
 function checkWinner() {
   if (
@@ -119,6 +123,8 @@ function checkWinner() {
     return true;
   }
 }
+
+// Event listener for the button to start a new game. Places the game back in the beginning state.
 
 document.querySelector("#new-game").addEventListener("click", function () {
   currentPlayer = "X";
