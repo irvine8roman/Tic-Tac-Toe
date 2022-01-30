@@ -98,6 +98,7 @@ function checkWinner() {
       document.querySelector("#letter-five").innerHTML === "O" &&
       document.querySelector("#letter-seven").innerHTML === "O")
   ) {
+    document.querySelector("#player-alert").classList = "alert alert-primary";
     document.querySelector(
       "#player-turn"
     ).innerHTML = `${currentPlayer} is the winner!`;
@@ -113,6 +114,7 @@ function checkWinner() {
     document.querySelector("#letter-eight").innerHTML !== "" &&
     document.querySelector("#letter-nine").innerHTML !== ""
   ) {
+    document.querySelector("#player-alert").classList = "alert alert-warning";
     document.querySelector("#player-turn").innerHTML = "It's a tie!";
     return true;
   }
@@ -120,6 +122,7 @@ function checkWinner() {
 
 document.querySelector("#new-game").addEventListener("click", function () {
   currentPlayer = "X";
+  document.querySelector("#player-alert").classList = "alert alert-secondary";
   document.querySelector("#player-turn").innerHTML = `${currentPlayer}'s turn!`;
   document.querySelector("#letter-one").innerHTML = "";
   document.querySelector("#letter-two").innerHTML = "";
